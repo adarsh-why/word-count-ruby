@@ -1,16 +1,30 @@
-create a hash word_hash with key as word and value as count
-Keep a sample text file
-Read from text file line by line
-take our each words and check if that word is there in the hash we create(word_hash)
-if that word is there in hash, increment its count
-if that word is not in hash, then create the word with count as 1
+#Word count problem in Ruby
 
-case 1: 
-consider that there is only one line in text file
-consider all the words are downcased
+Sort and print occurrence of words from a text file in descending order
 
-case 2:
-avoid considerations in case 1
-consider there are no commas or other punctuations
-consider all words are in each space seperated 
+Input - Output format
+----------------------
 
+Input from : Read from wordfile.txt file
+Output at  : Store in output.txt file
+
+Functions :-
+-------------
+
+1. read_each_line_from    :- to read the input from a file
+2. take_words_from line   :- take each line from input file and remove punctuations
+3. update_hash_with_words :- update hash with key as word and value as it count
+4. remove_common_words    :- remove all the words in common-words.txt file
+
+Pseudo-Code :- 
+---------------
+
+1. Read from input text file line by line
+2. remove all the punctuations from the line and split each words to form an array
+3. iterate through this array and check if the hash table have the key with words in array
+4. if word is present in hash table, then increment the count of it by 1
+5. If word is not present in hash table, then add the word to hash and assign its count = 1
+6. read from the common_words.txt file and check if those words are present as key of the hash
+7. If common_words is present in hash, then remove it
+8. Sort the hash based on the occurance of the word
+8. Store the filtered hash to output.txt file
