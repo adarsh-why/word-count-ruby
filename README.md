@@ -12,10 +12,10 @@ Output at  : Store in output.txt file
 Functions :-
 -------------
 
-1. read_each_line_from    :- to read the input from a file
-2. take_words_from line   :- take each line from input file and remove punctuations
-3. update_hash_with_words :- update hash with key as word and value as it count
-4. remove_common_words    :- remove all the words in common-words.txt file
+1. **read_each_line_from**    :- to read the input from a file
+2. **take_words_from_line**   :- take each line from input file and remove punctuations
+3. **update_hash_with_words** :- update hash with key as word and value as it count
+4. **remove_common_words**    :- remove all the words in common-words.txt file
 
 Pseudo-Code :- 
 ---------------
