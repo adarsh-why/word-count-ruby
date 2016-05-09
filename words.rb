@@ -1,7 +1,7 @@
 @word_hash = Hash.new
 
 def read_each_line_from_file
-    File.open('wordfile.txt', 'r') do |file|  
+    File.open('input.txt', 'r') do |file|  
         while line = file.gets  
             take_words_from line  
         end  
