@@ -6,6 +6,7 @@ Input - Output format
 ----------------------
 
 Input from : Read from wordfile.txt file
+
 Output at  : Store in output.txt file
 
 Functions :-
