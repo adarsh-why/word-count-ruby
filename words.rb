@@ -9,8 +9,7 @@ def read_each_line_from_file
 end
 
 def take_words_from line
-    words = line.gsub(/[^[:word:]\s]/, '').split(" ")
-    words.map!{|word| word.downcase}
+    words = line.gsub(/[^[:word:]\s]/, '').split(" ").map!{|word| word.downcase}
     update_hash_with words
 end
 
